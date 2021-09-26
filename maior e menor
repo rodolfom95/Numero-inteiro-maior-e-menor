@@ -1,0 +1,14 @@
+maior = 0
+menor = 0
+for n in range(1,5):
+    número = int(input(f'Digite o {n}° número: '))
+    if n == 1:
+        maior = número
+        menor = número
+    else:
+        if número > maior:
+            maior = número
+        if número < menor:
+            menor = número
+print(f'Número maior digitado foi {maior}')
+print(f'Número menor digitado foi {menor}')
